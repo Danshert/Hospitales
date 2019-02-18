@@ -14,7 +14,7 @@ before_script:
   - echo "Antes de ejecutar un script"
 
 script: 
-  - cd peliculas
+  - cd hospitales
   - python manage.py test
 
 notifications:
