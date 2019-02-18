@@ -1,0 +1,21 @@
+language: python
+
+matrix:
+  include:
+    - python: 3.7
+      dist: xenial
+      sudo: true
+
+install: 
+  - echo "Aquí se instalan las dependencias"
+  - pip install -r requirements.txt
+
+before_script: 
+  - echo "Antes de ejecutar un script"
+
+script: 
+  - cd peliculas
+  - python manage.py test
+
+notifications:
+email: false
