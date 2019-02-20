@@ -1,7 +1,7 @@
 
 
 # Create your views here.
-def vista(self, opcion):
+def vista(opcion):
     if opcion:
         return ("Es True")
     else:
