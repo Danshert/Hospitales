@@ -16,12 +16,8 @@ before_script:
 script: 
   - cd hospitales
   - python manage.py test
-  - flake8 /medicos/test.py
-  - flake8 /pacientes/test.py
-  - flake8 --max-complexity 10 /pacientes/views.py
-  - flake8 /consultas/test.py
-  - flake8 /consultas/test.py
-  - flake8 --max-complexity 10 /consultas/views.py
+  - flake8 --max-complexity 8 --exclude=*migrations*,*settings* .
+
 
 notifications:
 email: false
