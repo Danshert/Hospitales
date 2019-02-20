@@ -1,10 +1,10 @@
 
 
 # Create your views here.
-def complejidad(self):
-    if True:
-        pass
-    if False:
-        pass
+def vista(self, opcion):
+    if opcion:
+        return ("Es True")
+    else:
+        return ("Es False")
 
-    print("Complejidad")
+    print("Complejidad Ciclomatica")
