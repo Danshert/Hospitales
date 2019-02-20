@@ -17,6 +17,9 @@ script:
   - cd hospitales
   - python manage.py test
   - flake8 --max-complexity 8 --exclude=*migrations*,*settings* .
+  - coverage run --source='.' --omit=*test*,*migrations*,*__init*,*settings*,*apps*,*wsgi* manage.py test
+  - coverage report
+  - coverage html
 
 
 notifications:
