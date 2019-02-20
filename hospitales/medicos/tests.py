@@ -1,5 +1,5 @@
 from django.test import TestCase
-from views import vista
+from .views import vista
 
 
 class TestCatalogo(TestCase):
